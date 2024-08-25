@@ -1,6 +1,6 @@
 # Documentation
 
-All our documentation is located at [hotio.dev](https://engels74.net).
+All our documentation is located at [engels74.net](https://engels74.net).
 
 # Support
 
