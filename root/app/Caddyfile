@@ -3,10 +3,10 @@
   https_port 443
 }
 
-(block_world) {
-  @block not remote_ip private_ranges
-  abort @block
-}
+#(block_world) {
+#  @block not remote_ip private_ranges
+#  abort @block
+#}
 
 (security_headers) {
   header {
@@ -30,7 +30,7 @@
   import log_settings
   root * /app/www
   file_server
-  import block_world
+#  import block_world
 }
 
 # Default reverse proxy template for your domain
