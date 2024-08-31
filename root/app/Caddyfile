@@ -1,12 +1,12 @@
 {
-  http_port  80
-  https_port 443
+  http_port  8080
+  https_port 8443
 }
 
-#(block_world) {
-#  @block not remote_ip private_ranges
-#  abort @block
-#}
+(block_world) {
+  @block not remote_ip private_ranges
+  abort @block
+}
 
 (security_headers) {
   header {
@@ -26,7 +26,7 @@
 }
 
 # Default http file server
-:80 {
+:8080 {
   import log_settings
   root * /app/www
   file_server
