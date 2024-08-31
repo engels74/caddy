@@ -30,7 +30,7 @@
   import log_settings
   root * /app/www
   file_server
-#  import block_world
+  import block_world
 }
 
 # Default reverse proxy template for your domain
