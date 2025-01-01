@@ -18,6 +18,12 @@ if [[ ! -f "${CONFIG_DIR}/Caddyfile" ]]; then
     find "${CONFIG_DIR}/Caddyfile" -maxdepth 0 \( ! -user hotio -or ! -group hotio \) -exec chown hotio:hotio {} +
 fi
 
+if [[ ! -d "${CONFIG_DIR}/logs" ]]; then
+    echo "Creating logs directory..."
+    mkdir -p "${CONFIG_DIR}/logs"
+    chown hotio:hotio "${CONFIG_DIR}/logs"
+fi
+
 ln -sf "${APP_DIR}/caddy" "/usr/local/bin/caddy"
 
 if [[ -n "${CUSTOM_BUILD}" ]]; then
