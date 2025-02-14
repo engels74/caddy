@@ -9,6 +9,7 @@ RUN xcaddy_version=$(curl -u "${GITHUB_ACTOR}:${GITHUB_TOKEN}" -fsSL "https://ap
     xcaddy build v${VERSION} --output /caddy-bin \
         --with github.com/mholt/caddy-ratelimit \
         --with github.com/caddy-dns/njalla \
+        --with github.com/mholt/caddy-l4 \
         --with github.com/caddy-dns/cloudflare && \
     chmod 755 "/caddy-bin"
 
