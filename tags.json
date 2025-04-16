@@ -2,13 +2,13 @@
   "release": {
     "description": "Releases",
     "hide": false,
-    "last_updated": "2025-04-16T15:12:59.000Z",
-    "last_updated_url": "https://github.com/engels74/caddy/actions/runs/14496156239",
+    "last_updated": "2025-04-16T22:10:46.000Z",
+    "last_updated_url": "https://github.com/engels74/caddy/actions/runs/14503542256",
     "latest": true,
     "tags": [
       "release",
       "release-2.9.1",
-      "release-2518cd0"
+      "release-7c305c1"
     ]
   }
 }
