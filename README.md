@@ -17,7 +17,8 @@ All the documentation for the "caddy" is located here.
 
 For more information about the Docker image itself, you can visit [engels74.net](https://engels74.net/containers/caddy).
 
-> Regarding libdns/njalla
+> **Regarding libdns/njalla plugin**:
+>
 > While we are waiting for the [pull request](https://github.com/libdns/njalla/pull/2) to get merged, I've replaced the libdns plugin with the one [being merged](https://github.com/engels74/libdns-njalla) from the pull request.
 
 ## 🐋 Docker Image
