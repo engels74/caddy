@@ -8,7 +8,7 @@ RUN xcaddy_version=$(curl -u "${GITHUB_ACTOR}:${GITHUB_TOKEN}" -fsSL "https://ap
     wget -O - "https://github.com/caddyserver/xcaddy/releases/download/v${xcaddy_version}/xcaddy_${xcaddy_version}_linux_amd64.tar.gz" | tar xzf - -C "/bin" && \
     xcaddy build v${VERSION} --output /caddy-bin \
         --with github.com/mholt/caddy-ratelimit \
-        --with github.com/caddy-dns/njalla=github.com/engels74/caddy-dns-njalla \
+        --with github.com/caddy-dns/njalla=github.com/engels74/caddy-dns-njalla@master \
         --with github.com/caddy-dns/cloudflare && \
     chmod 755 "/caddy-bin"
 
